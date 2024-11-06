@@ -73,6 +73,8 @@ Notice also that `style` query is experimental so NOT in the baseline.
 
 [demo](./container-queries/index.html)
 
+Additional content on this: https://www.youtube.com/watch?v=DHj7JhH8ins (thanks @misiekhardcore!)
+
 ## [subgrid](https://web.dev/articles/css-subgrid)
 
 This allows to reuse grid configuration in other elements than direct children.
