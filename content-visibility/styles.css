@@ -1,0 +1,14 @@
+@import url('./node_modules/dmn-js/dist/assets/dmn-js-boxed-expression-controls.css');
+@import url('./node_modules/dmn-js/dist/assets/dmn-js-boxed-expression.css');
+@import url('./node_modules/dmn-js/dist/assets/dmn-js-decision-table-controls.css');
+@import url('./node_modules/dmn-js/dist/assets/dmn-js-decision-table.css');
+@import url('./node_modules/dmn-js/dist/assets/dmn-js-drd.css');
+@import url('./node_modules/dmn-js/dist/assets/dmn-js-literal-expression.css');
+@import url('./node_modules/dmn-js/dist/assets/dmn-js-shared.css');
+@import url('./node_modules/dmn-js/dist/assets/dmn-font/css/dmn-embedded.css');
+
+tr,
+td {
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto 2em;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Example</title>
+  <style>
+    input {
+      border: 1px solid grey;
+      color: black;
+    }
+
+    input:user-invalid {
+      border-color: red;
+      background-color: lightpink;
+    }
+
+    input:user-valid {
+      border-color: green;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="form">
+    <label>Email:<input required type="email" id="userInput" placeholder="m@camunda.com"></label>
+    <button>submit</button>
+  </form>
+  <script>
+    window.form.addEventListener('submit', event => {
+      debugger;
+      console.log(event);
+      event.preventDefault();
+    })
+  </script>
+</body>
+
+</html>

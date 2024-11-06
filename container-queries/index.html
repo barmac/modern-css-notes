@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Queries Example</title>
+  <style>
+    #container {
+      container: my-container / inline-size;
+      width: 100px;
+
+      & p {
+        height: 50px;
+      }
+    }
+
+    @container my-container not (width > 300px) {
+      p {
+        background-color: red;
+      }
+    }
+
+    @container my-container (width > 300px) {
+      p {
+        background-color: yellow;
+      }
+    }
+
+    @container my-container (width > 600px) {
+      p {
+        background-color: green;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Container Queries Example</h1>
+  <div id="container">
+    <p>
+    </p>
+  </div>
+  <p>
+    Background color depends on the size of container
+    <label>Set size (100-800px): <input value="100" type="range" step="1" min="100" max="800"></label>
+  </p>
+  <script>
+    document.querySelector('input[type=range]').oninput = event => {
+      const value = parseInt(event.target.value, 10);
+      window.container.style.width = `${value}px`;
+    }
+  </script>
+</body>
+
+</html>

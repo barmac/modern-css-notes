@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Content Example</title>
+  <style>
+    .container {
+      --side: 200px;
+      align-content: center;
+      height: var(--side);
+      width: var(--side);
+      background-color: red;
+
+      &>div {
+        background-color: antiquewhite;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Align Content Example</h1>
+  <div class="container">
+    <div>
+      I am vertically in the center now.
+    </div>
+  </div>
+</body>
+
+</html>
