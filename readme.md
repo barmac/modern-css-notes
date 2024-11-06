@@ -73,7 +73,7 @@ Notice also that `style` query is experimental so NOT in the baseline.
 
 [demo](./container-queries/index.html)
 
-Additional content on this: https://www.youtube.com/watch?v=DHj7JhH8ins (thanks @misiekhardcore!)
+Additional content on this: https://www.youtube.com/watch?v=DHj7JhH8ins (thanks [@misiekhardcore](https://github.com/misiekhardcore)!)
 
 ## [subgrid](https://web.dev/articles/css-subgrid)
 
